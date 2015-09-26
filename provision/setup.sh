@@ -19,6 +19,6 @@ apt-get install mongodb-server -y
 echo "Configuring MongoDB..."
 sed -i 's/bind_ip = 127.0.0.1/bind_ip = 0.0.0.0/g' /etc/mongodb.conf
 
-service mongo restart
+service mongod restart
 
 echo "Finished provisioning."

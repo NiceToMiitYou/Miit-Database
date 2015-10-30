@@ -1,7 +1,7 @@
 Vagrant.configure("2") do |config|
 	
 	# Specify the base box
-	config.vm.box = "chef/ubuntu-14.10"
+	config.vm.box = "ubuntu/trusty64"
 	
 	# Setup port forwarding
     config.vm.network "private_network", ip: "192.168.56.101"
